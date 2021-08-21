@@ -5,19 +5,21 @@ import classes from './UsersList.module.css';
 
 const UsersList = (props) => {
   return (
-    <section className={`section ${classes['users-section']}`}>
-      <div className='container'>
-        <div className='section__title'>
-          <h1>Users List</h1>
-        </div>
+    <main>
+      <section className={`section ${classes['users-section']}`}>
+        <div className='container'>
+          <div className='section__title'>
+            <h1>Users List</h1>
+          </div>
 
-        <div className={classes['users-wrapper']}>
-          {props.users.map((user) => {
-            return <User key={user.id} {...user} />;
-          })}
+          <div className={classes['users-wrapper']}>
+            {props.users.map((user) => {
+              return <User key={user.id} {...user} />;
+            })}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 };
 

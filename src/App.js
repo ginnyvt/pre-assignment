@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import UsersList from './components/Users/UsersList';
 import Loading from './components/UI/Loading';
 import UserDetails from './components/Users/UserDetails';
+import Footer from './components/Footer/Footer';
 
 const API = 'https://jsonplaceholder.typicode.com/users';
 
@@ -30,14 +31,17 @@ const App = () => {
   }
 
   return (
-    <Switch>
-      <Route path='/:userId'>
-        <UserDetails />
-      </Route>
-      <Route exact path='/'>
-        <UsersList users={usersList} />
-      </Route>
-    </Switch>
+    <>
+      <Switch>
+        <Route path='/:userId'>
+          <UserDetails />
+        </Route>
+        <Route exact path='/'>
+          <UsersList users={usersList} />
+        </Route>
+      </Switch>
+      <Footer />
+    </>
   );
 };
 

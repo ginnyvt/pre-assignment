@@ -1,0 +1,18 @@
+.footer {
+  background-color: #6d8dac;
+  padding: 1.5rem;
+  text-align: center;
+  position: sticky;
+}
+
+.social-icons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: inherit;
+  margin-right: 0.6rem;
+}
