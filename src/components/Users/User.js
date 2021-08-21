@@ -1,6 +1,7 @@
 import React from 'react';
-import Button from '../UI/Button';
+import { Link } from 'react-router-dom';
 
+import Button from '../UI/Button';
 import Card from '../UI/Card';
 
 import classes from './User.module.css';
@@ -18,13 +19,15 @@ const User = (props) => {
         </div>
 
         <div className={classes.content}>
-          <h4>{props.name}</h4>
+          <h3>{props.name}</h3>
           <p>@{props.username}</p>
           <a>{`http://${props.website}`}</a>
         </div>
 
         <div className={classes.actions}>
-          <Button>More Details</Button>
+          <Link to={`/${props.id}`}>
+            <Button>More Details</Button>
+          </Link>
         </div>
       </article>
     </Card>

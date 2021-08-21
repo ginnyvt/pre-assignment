@@ -8,7 +8,7 @@ const UsersList = (props) => {
     <section className={`section ${classes['users-section']}`}>
       <div className='container'>
         <div className='section__title'>
-          <h2>Users List</h2>
+          <h1>Users List</h1>
         </div>
 
         <div className={classes['users-wrapper']}>

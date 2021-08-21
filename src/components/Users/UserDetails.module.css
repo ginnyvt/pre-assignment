@@ -1,0 +1,32 @@
+.flex {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.user-details {
+  width: 40rem;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.details__title {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.details {
+  margin-bottom: 2rem;
+}
+
+.address-details {
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.actions {
+  text-align: right;
+}
