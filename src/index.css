@@ -1,3 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap');
+
+:root {
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Raleway', sans-serif;
+  --color-primary: #3456ff;
+  --color-secondary: #070928;
+  --color-white: #fff;
+  --color-bg: #f8f8fa;
+}
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-secondary);
+  color: var(--color-secondary);
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 800px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
 }
